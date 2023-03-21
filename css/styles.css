@@ -184,9 +184,18 @@ button {cursor: pointer;}
 }
 .advantages-item-description {line-height: 1.5;}
 /*=======================ABOUT=========================*/
-
+.about-menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--card-set-horizontal-gap);
+}
 /*=======================TEAM==========================*/
 .team {background-color: var(--light);}
+.team-menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--card-set-horizontal-gap);
+}
 .team-menu-item {background-color: var(--white-background);}
 .team-menu-title {
     font-weight: 500;
@@ -202,6 +211,11 @@ button {cursor: pointer;}
     color: var(--text);
 }
 /*=====================PORTFOLIO=======================*/
+.projects-menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--card-set-horizontal-gap);
+}
 .projects-menu-btn {
     font-family: 'Roboto', sans-serif;
     background: var(--light);
