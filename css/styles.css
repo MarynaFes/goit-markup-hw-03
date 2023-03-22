@@ -51,6 +51,18 @@ ol {
 img {display: block; max-width: 100%;}
 address {font-style: normal;}
 button {cursor: pointer;}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .link {text-decoration: none;}
 .list {list-style: none;}
 /*======================COMPONENTS=====================*/
@@ -148,9 +160,7 @@ button {cursor: pointer;}
     letter-spacing: 0.02em;
     color: var(--white-background);
     width: 496px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: var(--card-set-vertical-gap);
+    margin: 0 auto;
 }
 .hero-btn {
     font-family: 'Roboto', sans-serif;
@@ -165,6 +175,8 @@ button {cursor: pointer;}
     min-width: 169px;
     height: 56px;
     padding: 16px 32px;
+    margin: 0 auto;
+    margin-top: var(--card-set-vertical-gap);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -173,10 +185,12 @@ button {cursor: pointer;}
     border-radius: 4px;
 }
 /*=====================ADVANTAGES======================*/
+.advantages {
+    padding-top: 120px;
+}
 .advantages-menu {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 120px;
     gap: 24px;
 }
 .advantages {padding-bottom: 0px;}
@@ -237,7 +251,6 @@ flex-basis: calc(100%-3*var(--card-set-horizontal-gap))/4;
     display: flex;
     flex-wrap: wrap;
     column-gap: var(--card-set-horizontal-gap);
-    padding-top: 96px;
     margin-bottom: 72px;
     justify-content: center;
 }
@@ -252,7 +265,6 @@ flex-basis: calc(100%-3*var(--card-set-horizontal-gap))/4;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
     color: var(--primary-brand);
     min-width: 69px;
