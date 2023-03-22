@@ -201,6 +201,7 @@ button {cursor: pointer;}
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
+    margin-bottom: 8px;
 }
 .advantages-item-description {line-height: 1.5;}
 /*=======================ABOUT=========================*/
