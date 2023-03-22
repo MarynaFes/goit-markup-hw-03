@@ -297,6 +297,7 @@ button {cursor: pointer;}
     letter-spacing: 0.02em;
     color: var(--dark);
     padding-left: 16px;
+    margin-bottom: 8px;
 }
 .projects-list-description {
     line-height: 1.5;
