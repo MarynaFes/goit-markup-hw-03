@@ -140,6 +140,7 @@ button {cursor: pointer;}
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    justify-content: center;
 }
 .hero-title {
     font-size: 56px;
@@ -164,7 +165,6 @@ button {cursor: pointer;}
     min-width: 169px;
     height: 56px;
     padding: 16px 32px;
-    justify-content: center;
 }
 .hero-btn:hover,
 .hero-btn:focus {
