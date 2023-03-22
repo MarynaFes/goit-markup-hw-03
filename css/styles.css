@@ -28,6 +28,10 @@ body {
     padding-right: 15px;
 
 }
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 p,
 h1,
 h2,
@@ -65,6 +69,7 @@ button {cursor: pointer;}
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 .page-navigation {
     display: flex;
@@ -136,14 +141,16 @@ button {cursor: pointer;}
     padding-bottom: 188px;
     padding-left: 472px;
     padding-right: 472px;
+    text-align: center;
 }
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--white-background);
     width: 496px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: var(--card-set-vertical-gap);
 }
 .hero-btn {
@@ -159,6 +166,7 @@ button {cursor: pointer;}
     min-width: 169px;
     height: 56px;
     padding: 16px 32px;
+    justify-content: center;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -170,10 +178,10 @@ button {cursor: pointer;}
 .advantages-menu {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 120px;
     padding-top: 120px;
     gap: 24px;
 }
+.advantages {padding-bottom: 0px;}
 .advantages-item {width: 264px;}
 .advantages-item-title {
     font-weight: 500;
@@ -184,19 +192,34 @@ button {cursor: pointer;}
 }
 .advantages-item-description {line-height: 1.5;}
 /*=======================ABOUT=========================*/
+.about-title {margin-bottom: 72px;}
 .about-menu {
     display: flex;
-    flex-wrap: wrap;
     column-gap: var(--card-set-horizontal-gap);
+}
+.about-menu-item {
+    flex-basis: calc(100%-2*var(--card-set-horizontal-gap))/3;
+    border: 1px solid #E7E9FC;
 }
 /*=======================TEAM==========================*/
 .team {background-color: var(--light);}
+.team-title {
+    margin-bottom: 72px;
+}
 .team-menu {
     display: flex;
     flex-wrap: wrap;
     column-gap: var(--card-set-horizontal-gap);
 }
-.team-menu-item {background-color: var(--white-background);}
+.team-menu-item {background-color: var(--white-background);
+flex-basis: calc(100%-3*var(--card-set-horizontal-gap))/4;
+}
+.team-menu-item-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+}
 .team-menu-title {
     font-weight: 500;
     font-size: 20px;
@@ -204,6 +227,7 @@ button {cursor: pointer;}
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--dark);
+    margin-bottom: 8px;
 }
 .team-menu-description {
     line-height: 1.5;
@@ -215,6 +239,9 @@ button {cursor: pointer;}
     display: flex;
     flex-wrap: wrap;
     column-gap: var(--card-set-horizontal-gap);
+    padding-top: 96px;
+    margin-bottom: 72px;
+    justify-content: center;
 }
 .projects-menu-btn {
     font-family: 'Roboto', sans-serif;
@@ -225,10 +252,13 @@ button {cursor: pointer;}
     font-size: 16px;
     line-height: 1.5;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--primary-brand);
+    min-width: 69px;
+    height: 48px;
 }
 .projects-menu-btn:hover,
 .projects-menu-btn:focus {
@@ -243,6 +273,9 @@ button {cursor: pointer;}
         row-gap: var(--card-set-vertical-gap);
         column-gap: var(--card-set-horizontal-gap);
 }
+.project-list-item {
+    flex-basis: calc(100%-2*var(--card-set-horizontal-gap))/3;
+    }
 .projects-list-title {
     font-weight: 500;
     font-size: 20px;
@@ -252,7 +285,7 @@ button {cursor: pointer;}
 }
 .projects-list-description {
     line-height: 1.5;
-    color: var(--text);;
+    color: var(--text);
 }
 /*======================FOOTER=========================*/
 .footer {background-color: var(--dark);}
@@ -260,3 +293,11 @@ button {cursor: pointer;}
 .footer-copy {
     line-height: 1.5;
     color: var(--light);}
+.footer-logotype {
+    margin-bottom: 16px;
+    }
+.page-footer-container {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 100px;
+    padding-top: 100px;
+    }
