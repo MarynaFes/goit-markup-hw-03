@@ -75,13 +75,15 @@ button {cursor: pointer;}
     color: var(--dark);
 }
 /*========================HEADER=======================*/
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
 .page-header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E7E9FC;
 }
 .page-navigation {
     display: flex;
@@ -171,6 +173,7 @@ button {cursor: pointer;}
     color: var(--white-background);
     background: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
@@ -251,6 +254,10 @@ button {cursor: pointer;}
     color: var(--text);
 }
 /*=====================PORTFOLIO=======================*/
+.projects-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .projects-menu {
     display: flex;
     flex-wrap: wrap;
@@ -274,6 +281,7 @@ button {cursor: pointer;}
 .projects-menu-btn:focus {
     background: var(--pressed-state);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: var(--pressed-state);
     border-radius: 4px;
     color: var(--white-background);
 }
@@ -289,7 +297,9 @@ button {cursor: pointer;}
 .projects-list-item-container {
     padding-bottom: 32px;
     padding-top: 32px;
-    border: 1px solid #E7E9FC
+    padding-left: 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
     }
 .projects-list-title {
     font-weight: 500;
@@ -297,16 +307,17 @@ button {cursor: pointer;}
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    padding-left: 16px;
     margin-bottom: 8px;
 }
 .projects-list-description {
     line-height: 1.5;
     color: var(--text);
-    padding-left: 16px;
 }
 /*======================FOOTER=========================*/
-.footer {background-color: var(--dark);}
+.footer {background-color: var(--dark);
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
 .footer-logotype-color {color: var(--light)}
 .footer-copy {
     line-height: 1.5;
@@ -314,9 +325,4 @@ button {cursor: pointer;}
     max-width: 264px;}
 .footer-logotype {
     margin-bottom: 16px;
-    }
-.page-footer-container {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-bottom: 100px;
-    padding-top: 100px;
     }
